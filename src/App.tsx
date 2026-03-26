@@ -84,8 +84,8 @@ export default function App() {
         title: "One Setup, Infinite Styles",
         description: "Input your projects just once, then let our smart templates do the heavy lifting. Instantly generate and swap between multiple visual themes to perfectly match any specific class requirement or internship application.",
         buttonText: "Explore Themes",
-        imageSrc: "https://images.unsplash.com/photo-1507238692062-5a042e9e18c4?q=80&w=1974&auto=format&fit=crop",
-        imageAlt: "Design templates",
+        imageSrc: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2070&auto=format&fit=crop",
+        imageAlt: "Design templates and UI kits",
       },
     },
   ];

@@ -1,8 +1,9 @@
 "use client";
 
 import { motion, Variants } from "motion/react";
-import { Circle } from "lucide-react";
+import { Circle, ArrowRight } from "lucide-react";
 import { cn } from "@/src/lib/utils";
+import { Button } from "@/src/components/ui/button";
 
 function ElegantShape({
   className,
@@ -201,12 +202,16 @@ export function HeroGeometric({
             animate="visible"
             className="flex justify-center mt-8"
           >
-            <a
-              href="#signup"
-              className="px-8 py-4 rounded-full bg-white text-black font-bold hover:bg-white/90 hover:scale-105 transition-all flex items-center gap-2 group shadow-[0_0_40px_8px_rgba(255,255,255,0.15)]"
+            <Button
+              asChild
+              size="lg"
+              className="rounded-full bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-6 text-base sm:text-lg font-bold transition-all hover:scale-105 shadow-[0_0_40px_8px_rgba(79,70,229,0.3)] group"
             >
-              Start Your Free Trial
-            </a>
+              <a href="#signup">
+                Start Your Free Trial
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </a>
+            </Button>
           </motion.div>
         </div>
       </div>
