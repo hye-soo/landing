@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion, Variants } from "motion/react";
 import { Circle } from "lucide-react";
 import { cn } from "@/src/lib/utils";
 
@@ -81,7 +81,7 @@ export function HeroGeometric({
   title2?: string;
   description?: string;
 }) {
-  const fadeUpVariants = {
+  const fadeUpVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: (i: number) => ({
       opacity: 1,

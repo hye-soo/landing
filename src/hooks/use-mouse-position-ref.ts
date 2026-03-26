@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 export function useMousePositionRef(containerRef: React.RefObject<HTMLElement | null>) {
   const positionRef = useRef({ x: 0, y: 0 });

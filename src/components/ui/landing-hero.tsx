@@ -1,6 +1,7 @@
 "use client"
 
 import { LayoutGroup, motion } from "motion/react"
+import { ArrowUpRight } from "lucide-react"
 import { TextRotate } from "@/src/components/ui/text-rotate"
 import Floating, { FloatingElement } from "@/src/components/ui/parallax-floating"
 
@@ -56,7 +57,7 @@ const exampleImages = [
 
 function LandingHero() {
   return (
-    <section className="w-full h-screen overflow-hidden md:overflow-visible flex flex-col items-center justify-center relative bg-[#030303] text-white">
+    <section className="w-full h-screen overflow-hidden md:overflow-visible flex flex-col items-center justify-center relative bg-[#f8fafc] text-slate-900">
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/[0.05] via-transparent to-rose-500/[0.05] blur-3xl" />
       
       <Floating sensitivity={-0.5} className="h-full z-0 opacity-60">
@@ -67,7 +68,7 @@ function LandingHero() {
           <motion.img
             src={exampleImages[0].url}
             alt={exampleImages[0].title}
-            className="w-16 h-12 sm:w-24 sm:h-16 md:w-28 md:h-20 lg:w-32 lg:h-24 object-cover hover:scale-105 duration-200 cursor-pointer transition-transform -rotate-[3deg] shadow-2xl rounded-xl border border-white/10"
+            className="w-16 h-12 sm:w-24 sm:h-16 md:w-28 md:h-20 lg:w-32 lg:h-24 object-cover hover:scale-105 duration-200 cursor-pointer transition-transform -rotate-[3deg] shadow-2xl rounded-xl border border-white/60"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
@@ -81,7 +82,7 @@ function LandingHero() {
           <motion.img
             src={exampleImages[1].url}
             alt={exampleImages[1].title}
-            className="w-40 h-28 sm:w-48 sm:h-36 md:w-56 md:h-44 lg:w-60 lg:h-48 object-cover hover:scale-105 duration-200 cursor-pointer transition-transform -rotate-12 shadow-2xl rounded-xl border border-white/10"
+            className="w-40 h-28 sm:w-48 sm:h-36 md:w-56 md:h-44 lg:w-60 lg:h-48 object-cover hover:scale-105 duration-200 cursor-pointer transition-transform -rotate-12 shadow-2xl rounded-xl border border-white/60"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7 }}
@@ -95,7 +96,7 @@ function LandingHero() {
           <motion.img
             src={exampleImages[2].url}
             alt={exampleImages[2].title}
-            className="w-40 h-40 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-64 lg:h-64 object-cover -rotate-[4deg] hover:scale-105 duration-200 cursor-pointer transition-transform shadow-2xl rounded-xl border border-white/10"
+            className="w-40 h-40 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-64 lg:h-64 object-cover -rotate-[4deg] hover:scale-105 duration-200 cursor-pointer transition-transform shadow-2xl rounded-xl border border-white/60"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.9 }}
@@ -109,7 +110,7 @@ function LandingHero() {
           <motion.img
             src={exampleImages[3].url}
             alt={exampleImages[3].title}
-            className="w-40 h-36 sm:w-48 sm:h-44 md:w-60 md:h-52 lg:w-64 lg:h-56 object-cover hover:scale-105 duration-200 cursor-pointer transition-transform shadow-2xl rotate-[6deg] rounded-xl border border-white/10"
+            className="w-40 h-36 sm:w-48 sm:h-44 md:w-60 md:h-52 lg:w-64 lg:h-56 object-cover hover:scale-105 duration-200 cursor-pointer transition-transform shadow-2xl rotate-[6deg] rounded-xl border border-white/60"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.1 }}
@@ -123,7 +124,7 @@ function LandingHero() {
           <motion.img
             src={exampleImages[4].url}
             alt={exampleImages[4].title}
-            className="w-44 h-44 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 object-cover hover:scale-105 duration-200 cursor-pointer transition-transform shadow-2xl rotate-[19deg] rounded-xl border border-white/10"
+            className="w-44 h-44 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 object-cover hover:scale-105 duration-200 cursor-pointer transition-transform shadow-2xl rotate-[19deg] rounded-xl border border-white/60"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.3 }}
@@ -156,7 +157,7 @@ function LandingHero() {
                   "showcase",
                   "work",
                 ]}
-                mainClassName="overflow-hidden pr-3 text-indigo-400 py-0 pb-2 md:pb-4 rounded-xl"
+                mainClassName="overflow-hidden pr-3 text-indigo-600 py-0 pb-2 md:pb-4 rounded-xl"
                 staggerDuration={0.03}
                 staggerFrom="last"
                 rotationInterval={3000}
@@ -166,7 +167,7 @@ function LandingHero() {
           </LayoutGroup>
         </motion.h1>
         <motion.p
-          className="text-sm sm:text-lg md:text-xl lg:text-2xl text-center text-white/60 font-light pt-4 sm:pt-8 md:pt-10 lg:pt-12 max-w-2xl"
+          className="text-sm sm:text-lg md:text-xl lg:text-2xl text-center text-slate-600 font-light pt-4 sm:pt-8 md:pt-10 lg:pt-12 max-w-2xl"
           animate={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.2, ease: "easeOut", delay: 0.5 }}
@@ -177,7 +178,7 @@ function LandingHero() {
         <div className="flex flex-col sm:flex-row justify-center gap-4 items-center mt-10 sm:mt-16 md:mt-20 lg:mt-20 text-sm">
           <motion.a
             href="#signup"
-            className="sm:text-base md:text-lg font-semibold tracking-tight text-black bg-white px-6 py-3 sm:px-8 sm:py-4 rounded-full z-20 shadow-[0_0_40px_8px_rgba(255,255,255,0.15)]"
+            className="relative flex items-center sm:text-base md:text-lg font-semibold tracking-tight text-indigo-950 bg-white/40 backdrop-blur-xl border border-white/80 rounded-full h-14 sm:h-16 p-1 ps-6 pe-16 sm:ps-8 sm:pe-20 group transition-all duration-500 hover:ps-16 hover:pe-6 sm:hover:ps-20 sm:hover:pe-8 w-fit overflow-hidden cursor-pointer z-20 shadow-[0_8px_32px_rgba(0,0,0,0.08),inset_0_1px_1px_rgba(255,255,255,1)] hover:bg-white/60 hover:shadow-[0_8px_32px_rgba(99,102,241,0.15),inset_0_1px_1px_rgba(255,255,255,1)]"
             animate={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 20 }}
             transition={{
@@ -191,11 +192,16 @@ function LandingHero() {
               transition: { type: "spring", damping: 30, stiffness: 400 },
             }}
           >
-            Start 14-Day Free Trial
+            <span className="relative z-10 transition-all duration-500">
+              Start 14-Day Free Trial
+            </span>
+            <div className="absolute right-1 w-12 h-12 sm:w-14 sm:h-14 bg-white text-indigo-600 rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-52px)] sm:group-hover:right-[calc(100%-60px)] group-hover:rotate-45 shadow-sm">
+              <ArrowUpRight size={20} />
+            </div>
           </motion.a>
           <motion.a
             href="#usps"
-            className="sm:text-base md:text-lg font-semibold tracking-tight text-white bg-white/10 border border-white/20 px-6 py-3 sm:px-8 sm:py-4 rounded-full z-20 backdrop-blur-sm"
+            className="sm:text-base md:text-lg font-semibold tracking-tight text-slate-700 bg-slate-100/40 backdrop-blur-xl border border-white/60 px-6 py-3 sm:px-8 sm:py-4 rounded-full z-20 shadow-[0_8px_32px_rgba(0,0,0,0.04),inset_0_1px_1px_rgba(255,255,255,0.8)] hover:bg-slate-100/60 transition-all duration-300"
             animate={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 20 }}
             transition={{
@@ -206,7 +212,6 @@ function LandingHero() {
             }}
             whileHover={{
               scale: 1.05,
-              backgroundColor: "rgba(255,255,255,0.15)",
               transition: { type: "spring", damping: 30, stiffness: 400 },
             }}
           >
@@ -215,7 +220,7 @@ function LandingHero() {
         </div>
       </div>
       
-      <div className="absolute inset-0 bg-gradient-to-t from-[#030303] via-transparent to-transparent pointer-events-none z-0" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#f8fafc] via-transparent to-transparent pointer-events-none z-0" />
     </section>
   )
 }
